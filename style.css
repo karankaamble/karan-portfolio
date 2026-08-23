@@ -1,0 +1,100 @@
+/* =========================
+   General Settings
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+/* =========================
+   Main Container
+========================= */
+
+body {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* =========================
+   Headings
+========================= */
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* =========================
+   Paragraphs
+========================= */
+
+p {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   Skills
+========================= */
+
+ul {
+    margin-left: 25px;
+}
+
+li {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+/* =========================
+   Links
+========================= */
+
+a {
+    text-decoration: none;
+}
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p,
+    li {
+        font-size: 16px;
+    }
+}
