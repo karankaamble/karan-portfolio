@@ -1,82 +1,225 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Karan Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Karan Kaamble | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Hi, I'm Karan Kaamble</h1>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
 
-    <p>
-        MSc Computer Science Graduate | Aspiring Full Stack Java Developer
-    </p>
+            <div class="logo">
+                <span>&lt;/&gt;</span> Karan Kaamble
+            </div>
 
-    <h2>About Me</h2>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-    <p>
-        I am an MSc Computer Science graduate and an aspiring Full Stack Java Developer.
-        I enjoy building practical projects and learning new technologies.
-    </p>
+        </nav>
+    </header>
 
-    <h2>Skills</h2>
 
-    <ul>
-        <li>Java</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>Git & GitHub</li>
-    </ul>
+    <!-- Home Section -->
+    <section id="home" class="home">
 
-    <h2>Education</h2>
+        <div class="home-content">
 
-    <h3>MSc Computer Science</h3>
-    <p>A V College Post Graduate Centre</p>
+            <h3>Hello, I'm</h3>
 
-    <h3>BSc</h3>
-    <p>Physics, Mathematics and Computer Science</p>
+            <h1>Karan Kaamble</h1>
 
-    <h2>Projects</h2>
+            <h2>
+                And I'm a
+                <span>Full Stack Java Developer</span>
+            </h2>
 
-    <div class="project">
-        <h3>YouTube Video Summarizer & Q&A</h3>
+            <p>
+                MSc Computer Science graduate passionate about building
+                modern, responsive and user-friendly web applications
+                using HTML, CSS, JavaScript, Java and Python.
+            </p>
+
+            <!-- Social Links -->
+            <div class="social-links">
+
+                <a href="#" target="_blank">GitHub</a>
+
+                <a href="#" target="_blank">LinkedIn</a>
+
+            </div>
+
+            <!-- CV Button -->
+            <a href="#" class="cv-btn">
+                Download CV
+            </a>
+
+        </div>
+
+
+        <!-- Profile Image -->
+        <div class="home-image">
+
+            <div class="image-circle">
+
+                <img src="profile.jpg" alt="Karan Kaamble">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="section">
+
+        <h2 class="section-title">About <span>Me</span></h2>
 
         <p>
-            An AI-based application that summarizes YouTube videos
-            and allows users to ask questions about the video content.
+            I am an MSc Computer Science graduate with an interest in
+            software development and web technologies. I am currently
+            improving my skills in Java, Python, HTML, CSS, JavaScript
+            and SQL while building practical projects.
         </p>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+
+        <h2 class="section-title">My <span>Skills</span></h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>Web Structure</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>Responsive Design</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>Web Interactivity</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Java</h3>
+                <p>Backend Development</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Python</h3>
+                <p>Programming</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>SQL</h3>
+                <p>Database Management</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+
+        <h2 class="section-title">My <span>Projects</span></h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+
+                <h3>
+                    YouTube Video Summarizer & Q&A
+                </h3>
+
+                <p>
+                    An AI-based application that summarizes YouTube
+                    videos and allows users to ask questions about
+                    the video content.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    Python, Google Gemini, LangChain, Streamlit
+                </p>
+
+                <a href="#" target="_blank">
+                    View on GitHub
+                </a>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>
+                    Personal Portfolio Website
+                </h3>
+
+                <p>
+                    A responsive personal portfolio website to showcase
+                    my skills, projects, education and contact details.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    HTML, CSS, JavaScript
+                </p>
+
+                <a href="#" target="_blank">
+                    View Project
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+
+        <h2 class="section-title">Contact <span>Me</span></h2>
+
+        <p>Email: karankaamble011@gmail.com</p>
+
+        <p>Location: Hyderabad, India</p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
 
         <p>
-            <strong>Technologies:</strong>
-            Python, Google Gemini, LangChain, Streamlit
+            © 2026 Karan Kaamble. All Rights Reserved.
         </p>
 
-        <a href="#" target="_blank">View on GitHub</a>
-    </div>
+    </footer>
 
-    <h2>Contact</h2>
 
-    <p>
-        Email: karankaamble011@gmail.com
-    </p>
-
-    <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/karan-kaamble" target="_blank">
-            My LinkedIn Profile
-        </a>
-    </p>
-
-    <p>
-        GitHub:
-        <a href="https://github.com/karankaamble" target="_blank">
-            My GitHub Profile
-        </a>
-    </p>
+    <script src="script.js"></script>
 
 </body>
 </html>

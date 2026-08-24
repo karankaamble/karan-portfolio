@@ -1,126 +1,242 @@
-/* =========================
-   General Settings
-========================= */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7fb;
-    color: #222;
-    line-height: 1.6;
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 20px;
+    background: #050816;
+    color: white;
 }
 
-/* =========================
-   Headings
-========================= */
+/* ================= NAVBAR ================= */
 
-h1 {
-    font-size: 48px;
+header {
+    width: 100%;
+    padding: 25px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: rgba(5, 8, 22, 0.85);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo::before {
+    content: "</> ";
+    color: #8b5cf6;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a855f7;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 100vh;
+    padding: 140px 7% 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hello {
+    font-size: 25px;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
+h1 {
+    font-size: 70px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
 h2 {
-    font-size: 30px;
-    margin-top: 40px;
-    margin-bottom: 15px;
+    font-size: 34px;
+    margin-bottom: 25px;
 }
 
-h3 {
-    font-size: 22px;
-    margin-top: 20px;
+h2 span {
+    color: #a855f7;
 }
 
-/* =========================
-   Paragraphs
-========================= */
-
-p {
-    font-size: 17px;
-    margin-bottom: 15px;
+.description {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #cbd5e1;
+    max-width: 600px;
 }
 
-/* =========================
-   Skills
-========================= */
 
-ul {
-    margin-left: 25px;
+/* ================= SOCIAL LINKS ================= */
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin: 30px 0;
 }
 
-li {
-    font-size: 17px;
-    margin-bottom: 8px;
-}
-
-/* =========================
-   Links
-========================= */
-
-a {
-    color: #2563eb;
+.social-links a {
     text-decoration: none;
+    color: white;
+    border: 1px solid #8b5cf6;
+    padding: 10px 18px;
+    border-radius: 25px;
+    transition: 0.3s;
 }
 
-a:hover {
-    text-decoration: underline;
+.social-links a:hover {
+    background: #8b5cf6;
+    box-shadow: 0 0 20px #8b5cf6;
 }
 
-/* =========================
-   Mobile Responsive
-========================= */
 
-@media (max-width: 600px) {
+/* ================= CV BUTTON ================= */
 
-    body {
-        padding: 25px 15px;
+.cv-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+
+    padding: 14px 30px;
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #a855f7
+    );
+
+    font-size: 17px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.cv-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px #8b5cf6;
+}
+
+
+/* ================= PROFILE IMAGE ================= */
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-circle {
+    width: 400px;
+    height: 400px;
+
+    border-radius: 50%;
+
+    padding: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #d946ef
+    );
+
+    box-shadow:
+        0 0 30px #7c3aed,
+        0 0 70px rgba(168, 85, 247, 0.4);
+}
+
+.image-circle img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid #050816;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 130px;
+    }
+
+    .hero-content {
+        order: 2;
+    }
+
+    .hero-image {
+        order: 1;
     }
 
     h1 {
-        font-size: 34px;
+        font-size: 50px;
     }
 
     h2 {
         font-size: 25px;
     }
 
-    p,
-    li {
-        font-size: 16px;
+    .image-circle {
+        width: 280px;
+        height: 280px;
     }
-}
-/* =========================
-   Project Card
-========================= */
 
-.project {
-    background-color: white;
-    padding: 25px;
-    margin-top: 20px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-}
-
-.project h3 {
-    margin-top: 0;
-}
-
-.project a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 18px;
-    background-color: #222;
-    color: white;
-    border-radius: 5px;
-}
-
-.project a:hover {
-    background-color: #444;
+    .social-links {
+        justify-content: center;
+    }
 }
